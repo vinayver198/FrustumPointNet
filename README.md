@@ -35,10 +35,14 @@ The dataset should be stored in following structure :
 --kitti
   |__training
           |__image_2          
-          |__label_2          
+          |__label_2
+          |__velodyne
+          |__calib
   |__validation
           |__image_2
           |__label_2
+          |__velodyne
+          |__calib
  ```
  
  Every image has its corresponding image files and the detailed description of label file can found below 
@@ -62,8 +66,8 @@ To setup the environment download the [anaconda](https://www.anaconda.com/) .
 Clone this repo.
 
 ```
-git clone https://github.com/vinayver198/3D-DeepBox.git
-cd 3D-DeepBox
+git clone https://github.com/vinayver198/FrustumPointNet.git
+cd FrustumPointNet
 conda env create -f environment.yml
 ```
 ## Implementation
